@@ -17,5 +17,5 @@ ADD php/etc/php-fpm.conf       /opt/php/etc/php-fpm.conf
 ADD php/php.d/extensions.ini   /opt/php/php.d/extensions.ini
 
 COPY bootstrap /opt/bootstrap
-
+RUN chmod +x /opt/bootstrap
 ENTRYPOINT /opt/bootstrap
