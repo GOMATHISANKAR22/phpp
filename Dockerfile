@@ -18,4 +18,5 @@ ADD php/php.d/extensions.ini   /opt/php/php.d/extensions.ini
 
 COPY bootstrap /opt/bootstrap
 RUN chmod +x /opt/bootstrap
+EXPOSE 8080
 ENTRYPOINT /opt/bootstrap
